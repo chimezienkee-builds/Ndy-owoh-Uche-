@@ -1,0 +1,1423 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Ukabills 🖤</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <div id="introScreen" class="intro-screen">
+
+        <div class="intro-content">
+
+            <p class="tiny-text">A LITTLE SOMETHING FOR</p>
+
+            <h1>Ukabills</h1>
+
+            <p class="intro-line">
+                Your birthday deserved<br>
+                more than just a text.
+            </p>
+
+            <button onclick="enterWebsite()" class="enter-btn">
+                Open your surprise
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="mainWebsite" class="hidden">
+
+
+        <!-- =========================
+             HOME / HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    HAPPY BIRTHDAY, BESTIE
+                </p>
+
+                <h1>
+                    Us.<br>
+                    <span>Always.</span>
+                </h1>
+
+                <p class="hero-text">
+                    One picture could never tell our whole story.
+                </p>
+
+                <button
+                    onclick="scrollToSection('together')"
+                    class="main-btn">
+                    See our memories ↓
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             YOU TWO TOGETHER
+        ========================== -->
+
+        <section id="together" class="together-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    THE TWO OF US
+                </p>
+
+                <h2>
+                    My favourite<br>
+                    person to make memories with.
+                </h2>
+
+                <p>
+                    Life has given us a lot of random moments,
+                    and somehow we managed to turn them into memories.
+                </p>
+
+            </div>
+
+
+            <div class="together-grid">
+
+                <div class="together-photo main-photo">
+
+                    <img
+                        src="images/photo1.jpg"
+                        alt="Me and Ukabills together"
+                    >
+
+                    <div class="photo-label">
+                        US
+                    </div>
+
+                </div>
+
+
+                <div class="together-photo">
+
+                    <img
+                        src="images/photo2.jpg"
+                        alt="Me and Ukabills together"
+                    >
+
+                    <div class="photo-label">
+                        02
+                    </div>
+
+                </div>
+
+
+                <div class="together-photo">
+
+                    <img
+                        src="images/photo3.jpg"
+                        alt="Me and Ukabills together"
+                    >
+
+                    <div class="photo-label">
+                        03
+                    </div>
+
+                </div>
+
+
+                <div class="together-photo">
+
+                    <img
+                        src="images/photo4.jpg"
+                        alt="Me and Ukabills together"
+                    >
+
+                    <div class="photo-label">
+                        04
+                    </div>
+
+                </div>
+
+
+                <div class="together-photo">
+
+                    <img
+                        src="images/photo5.jpg"
+                        alt="Me and Ukabills together"
+                    >
+
+                    <div class="photo-label">
+                        05
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BIRTHDAY MESSAGE
+        ========================== -->
+
+        <section class="birthday-message">
+
+            <p class="eyebrow">
+                TODAY IS YOUR DAY
+            </p>
+
+            <h2>
+                Happy Birthday,<br>
+                <span>Ukabills. 🖤</span>
+            </h2>
+
+            <p class="big-message">
+                Another year of you.
+                Another year of laughter, madness,
+                conversations, pictures and memories.
+            </p>
+
+            <p class="small-message">
+                I hope this new chapter gives you more reasons
+                to smile, more opportunities to grow and more
+                moments that make you genuinely happy.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             19 MEMORIES
+        ========================== -->
+
+        <section id="memories" class="memories-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    OUR LITTLE ARCHIVE
+                </p>
+
+                <h2>
+                    19 memories.<br>
+                    Infinite stories.
+                </h2>
+
+                <p>
+                    Nineteen pictures of us.
+                    And somehow, there are still more stories to tell.
+                </p>
+
+            </div>
+
+
+            <div class="memory-grid">
+
+
+                <!-- MEMORY 01 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo1.jpg"
+                            alt="Memory 1"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 01</span>
+
+                        <p>
+                            The beginning of our little photo archive. 😂
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(1)">
+                                ♡ <span id="like1">0</span>
+                            </button>
+
+                            <button onclick="focusComment(1)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput1"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(1)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments1"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 02 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo2.jpg"
+                            alt="Memory 2"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 02</span>
+
+                        <p>
+                            We really thought we ate with this picture.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(2)">
+                                ♡ <span id="like2">0</span>
+                            </button>
+
+                            <button onclick="focusComment(2)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput2"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(2)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments2"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 03 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo3.jpg"
+                            alt="Memory 3"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 03</span>
+
+                        <p>
+                            Another one for the archives. 🖤
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(3)">
+                                ♡ <span id="like3">0</span>
+                            </button>
+
+                            <button onclick="focusComment(3)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput3"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(3)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments3"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 04 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo4.jpg"
+                            alt="Memory 4"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 04</span>
+
+                        <p>
+                            One of those moments worth keeping forever.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(4)">
+                                ♡ <span id="like4">0</span>
+                            </button>
+
+                            <button onclick="focusComment(4)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput4"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(4)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments4"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 05 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo5.jpg"
+                            alt="Memory 5"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 05</span>
+
+                        <p>
+                            Okay... we're actually cute here.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(5)">
+                                ♡ <span id="like5">0</span>
+                            </button>
+
+                            <button onclick="focusComment(5)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput5"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(5)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments5"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 06 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo6.jpg"
+                            alt="Memory 6"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 06</span>
+
+                        <p>
+                            Another chapter in the bestie archives.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(6)">
+                                ♡ <span id="like6">0</span>
+                            </button>
+
+                            <button onclick="focusComment(6)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput6"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(6)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments6"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 07 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo7.jpg"
+                            alt="Memory 7"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 07</span>
+
+                        <p>
+                            Friendship looking suspiciously expensive.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(7)">
+                                ♡ <span id="like7">0</span>
+                            </button>
+
+                            <button onclick="focusComment(7)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput7"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(7)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments7"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 08 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo8.jpg"
+                            alt="Memory 8"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 08</span>
+
+                        <p>
+                            This one definitely deserves a place here.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(8)">
+                                ♡ <span id="like8">0</span>
+                            </button>
+
+                            <button onclick="focusComment(8)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput8"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(8)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments8"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 09 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo9.jpg"
+                            alt="Memory 9"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 09</span>
+
+                        <p>
+                            We have too many pictures. But also not enough.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(9)">
+                                ♡ <span id="like9">0</span>
+                            </button>
+
+                            <button onclick="focusComment(9)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput9"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(9)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments9"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 10 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo10.jpg"
+                            alt="Memory 10"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 10</span>
+
+                        <p>
+                            Halfway through our museum of memories.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(10)">
+                                ♡ <span id="like10">0</span>
+                            </button>
+
+                            <button onclick="focusComment(10)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput10"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(10)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments10"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 11 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo11.jpg"
+                            alt="Memory 11"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 11</span>
+
+                        <p>
+                            Another favourite. No explanation needed.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(11)">
+                                ♡ <span id="like11">0</span>
+                            </button>
+
+                            <button onclick="focusComment(11)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput11"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(11)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments11"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 12 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo12.jpg"
+                            alt="Memory 12"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 12</span>
+
+                        <p>
+                            Our friendship deserves its own documentary.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(12)">
+                                ♡ <span id="like12">0</span>
+                            </button>
+
+                            <button onclick="focusComment(12)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput12"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(12)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments12"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 13 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo13.jpg"
+                            alt="Memory 13"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 13</span>
+
+                        <p>
+                            Certified bestie behaviour.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(13)">
+                                ♡ <span id="like13">0</span>
+                            </button>
+
+                            <button onclick="focusComment(13)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput13"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(13)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments13"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 14 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo14.jpg"
+                            alt="Memory 14"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 14</span>
+
+                        <p>
+                            Still one of the good ones.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(14)">
+                                ♡ <span id="like14">0</span>
+                            </button>
+
+                            <button onclick="focusComment(14)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput14"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(14)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments14"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 15 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo15.jpg"
+                            alt="Memory 15"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 15</span>
+
+                        <p>
+                            We definitely need to make more memories.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(15)">
+                                ♡ <span id="like15">0</span>
+                            </button>
+
+                            <button onclick="focusComment(15)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput15"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(15)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments15"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 16 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo16.jpg"
+                            alt="Memory 16"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 16</span>
+
+                        <p>
+                            Another chapter in our story.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(16)">
+                                ♡ <span id="like16">0</span>
+                            </button>
+
+                            <button onclick="focusComment(16)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput16"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(16)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments16"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 17 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo17.jpg"
+                            alt="Memory 17"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 17</span>
+
+                        <p>
+                            Okay, this one is actually iconic.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(17)">
+                                ♡ <span id="like17">0</span>
+                            </button>
+
+                            <button onclick="focusComment(17)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput17"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(17)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments17"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 18 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo18.jpg"
+                            alt="Memory 18"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 18</span>
+
+                        <p>
+                            One for the birthday girl.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(18)">
+                                ♡ <span id="like18">0</span>
+                            </button>
+
+                            <button onclick="focusComment(18)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput18"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(18)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments18"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MEMORY 19 -->
+
+                <article class="memory-card">
+
+                    <div class="memory-image">
+                        <img
+                            src="images/photo19.jpg"
+                            alt="Memory 19"
+                        >
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>MEMORY 19</span>
+
+                        <p>
+                            And this is where the next chapter begins.
+                        </p>
+
+                        <div class="interaction">
+
+                            <button onclick="likePhoto(19)">
+                                ♡ <span id="like19">0</span>
+                            </button>
+
+                            <button onclick="focusComment(19)">
+                                💬
+                            </button>
+
+                        </div>
+
+                        <div class="comment-area">
+
+                            <input
+                                id="commentInput19"
+                                type="text"
+                                placeholder="Leave a comment..."
+                            >
+
+                            <button onclick="addComment(19)">
+                                Post
+                            </button>
+
+                            <div
+                                id="comments19"
+                                class="comments">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LETTER
+        ========================== -->
+
+        <section class="letter-section">
+
+            <div class="letter-card">
+
+                <p class="eyebrow">
+                    A LETTER FOR YOU
+                </p>
+
+                <h2>
+                    Dear Ukabills,
+                </h2>
+
+                <p>
+                    I don't think I say it enough, but I'm genuinely grateful
+                    for you.
+                </p>
+
+                <p>
+                    Thank you for the random conversations, the laughs,
+                    the crazy moments, the pictures, the memories and
+                    everything in between.
+                </p>
+
+                <p>
+                    As you enter another year, I pray that life is kind to you.
+                    I pray that you grow into everything you're meant to become,
+                    and that your dreams start looking less like dreams
+                    and more like reality.
+                </p>
+
+                <p>
+                    May this year bring you beautiful opportunities,
+                    genuine happiness, good health, peace and plenty
+                    of reasons to smile.
+                </p>
+
+                <p>
+                    And obviously...
+                    <strong>
+                        I'm still here to disturb you. 😂
+                    </strong>
+                </p>
+
+                <div class="signature">
+                    Forever your bestie 🖤
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL SURPRISE
+        ========================== -->
+
+        <section class="final-section">
+
+            <p class="eyebrow">
+                ONE LAST THING
+            </p>
+
+            <h2>
+                Ready for<br>
+                your birthday surprise?
+            </h2>
+
+            <button
+                onclick="birthdaySurprise()"
+                class="surprise-btn">
+                🎁 Open it
+            </button>
+
+
+            <div
+                id="surpriseMessage"
+                class="surprise-message hidden">
+
+                <h3>
+                    HAPPY BIRTHDAY, UKABILLS! 🎂🖤
+                </h3>
+
+                <p>
+                    Here's to another year of memories,
+                    laughter, madness and becoming the woman
+                    you're meant to be.
+                </p>
+
+                <p class="huge">
+                    LOVE YOU BESTIE. 🖤
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <p>
+                Made with love for Ukabills 🖤
+            </p>
+
+            <p class="footer-small">
+                One birthday. Nineteen memories.
+                A lifetime to go.
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
